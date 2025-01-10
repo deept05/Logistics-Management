@@ -4,22 +4,24 @@
 This repository contains a Solidity smart contract for managing logistics operations. It allows customers to order items, carriers to update the transit status, and owners to manage carriers.
 
  ## Features
-## Order Management:
+1.Order Management:
 
 Place an order and generate a unique ID.
 Cancel an order.
-## Carrier Management:
+2.Carrier Management:
 
 Add or remove carriers by the contract owner.
 Report transit status updates by carriers.
-## Access Control:
+3.Access Control:
 
 Owner can manage carriers.
 Only authorized carriers can update the transit status.
-Contract Details
+
+## Contract Details
 Contract Name: Logistics
 Solidity Version: 0.8.26
 Owner: Address of the contract deployer
+
 ## Key Functions:
 manageCarriers(address _carrierAddress)
 orderItem(uint _itemId, string _itemName)
@@ -27,6 +29,7 @@ cancelOrder(address _uniqueId)
 carrier1Report(address _uniqueId, string _transitStatus)
 carrier2Report(address _uniqueId, string _transitStatus)
 carrier3Report(address _uniqueId, string _transitStatus)
+
 ## How to Use
 Deploy the Contract: Deploy the contract using a Solidity-compatible environment like Remix or Truffle.
 
